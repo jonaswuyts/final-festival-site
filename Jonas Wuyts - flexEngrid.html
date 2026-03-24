@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn Festival</title>
+
+  <style>
+
+    /* BASIS */
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    /* STAP 1 */
+    .navbar {
+      /* voeg hier flexbox toe */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* STAP 2 */
+    .hero {
+      /* voeg hier flexbox toe */
+      background-color: #e8e8e8;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero img {
+      width: 300px;
+    }
+
+    /* STAP 3 */
+    .programma {
+      /* maak hier een grid */
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    /* KAART */
+    .kaart {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      flex-grow: 1;
+    }
+
+    /* STAP 4 */
+    .info {
+      /* voeg hier flexbox toe */
+      display: flex;
+      gap: 20px;  
+    }
+
+    /* STAP 5 */
+    .footer-content {
+      /* voeg hier flexbox toe */
+      display: flex;
+      justify-content: space-between;
+    }
+  
+   @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .hero {
+        flex-direction: column;
+      }
+
+      .programma {
+        grid-template-columns: 1fr;
+      }
+
+      .info {
+        flex-direction: column;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <h1>Mijn Festival</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Programma</a>
+        <a href="#">Info</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Welkom!</h2>
+      <p>Welkom op mijn festivalwebsite.</p>
+      <button>Koop tickets</button>
+    </div>
+    <div>
+      <img src="https://picsum.photos/200">
+    </div>
+  </section>
+
+  <section>
+    <h2>Programma</h2>
+    <div class="programma">
+      <div class="kaart">Activiteit 1</div>
+      <div class="kaart">Activiteit 2</div>
+      <div class="kaart">Activiteit 3</div>
+      <div class="kaart">Activiteit 4</div>
+      <div class="kaart">Activiteit 5</div>
+      <div class="kaart">Activiteit 6</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Praktische info</h2>
+    <div class="info">
+      <div class="kaart">Datum</div>
+      <div class="kaart">Locatie</div>
+      <div class="kaart">Prijs</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>Contact</p>
+      <p>Social media</p>
+      <p>© 2026</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
